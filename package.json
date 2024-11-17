@@ -1,0 +1,25 @@
+{
+  "name": "typescript_node_express_prisma",
+  "version": "1.0.0",
+  "description": "Simple project with Node.js, Express.JS and Prisma",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "migrate": "prisma migrate dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.9.0",
+    "nodemon": "^3.1.7",
+    "prisma": "^5.22.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
