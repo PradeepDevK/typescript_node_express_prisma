@@ -1,0 +1,19 @@
+npm i  @prisma/client express
+
+npm install --save-dev  nodemon prisma ts-node typescript @types/express @types/node
+
+npx tsc --init
+
+npx prisma init --datasource-provider sqlite
+
+--> Update schema
+
+npm run migrate
+
+--> package.json <scripts>
+"dev": "nodemon src/index.ts",
+"migrate": "prisma migrate dev"
+
+--> update index.ts
+
+npm run dev
